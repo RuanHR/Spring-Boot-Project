@@ -1,0 +1,17 @@
+# spring config
+spring:
+  # datasource
+  datasource: 
+    url: jdbc:mysql://127.0.0.1/spring-boot?characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver 
+  # thymeleaf start
+  thymeleaf.mode: HTML5
+  thymeleaf.encoding: UTF-8
+  thymeleaf.content-type: text/html
+  # 开发时关闭缓存,不然没法看到实时页面
+  thymeleaf.cache: false
+  # 生产环境不启动
+  profiles:
+    include: 

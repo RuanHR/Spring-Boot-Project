@@ -1,0 +1,36 @@
+spring:
+  swagger-group:
+    system-api:
+      # api组的名字，会在swagger-ui的api下拉列表中显示
+      group-name: system-api
+      # api组的标题，会在swagger-ui的标题处描述
+      title: 系统方法
+      # api组的描述，会在swagger-ui的描述中显示
+      description: 系统方法统计 
+      # 匹配到本组的api接口，匹配uri，可以用用正则表达式
+      path-regex: /*
+      # 匹配到的url在swagger中测试请求时加的url前缀
+      path-mapping: /
+      # api版本
+      version: 0.0.1
+      # 授权协议                        
+      # license: 该文档仅限公司内部传阅
+      # 授权协议地址
+      # license-url: '#'
+      # 服务条款地址
+      # terms-of-service-url:
+      # 文档联系人
+      contact:
+        # 联系人名字                               
+        name: ToniR
+        # 联系人邮箱
+        email: rhr13591118151@gmail.com
+        # 联系地址
+        url: https://github.com/RuanHR
+          
+    user-api:
+        group-name: user-api
+        title: 用户api
+        description: 用户相关信息
+        path-regex: /user/.*
+        path-mapping: /

@@ -1,5 +1,7 @@
 package com.pactera.base.extension.mvc;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,29 +13,46 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@ApiModel("返回封装对象")
 public class ResponseWrapper {
 
 	/**
 	 * 类型
 	 */
 	public enum Status {
-		/** 成功 */
+		/**
+		 * 成功
+		 */
 		SUCCESS,
 
-		/** 错误 */
+		/**
+		 * 错误
+		 */
 		ERROR
 	}
 
-	/** 状态 */
+	/**
+	 * 状态
+	 */
+	@ApiModelProperty(value = "状态")
 	private Status status;
 
-	/** 内容 */
+	/**
+	 * 内容
+	 */
+	@ApiModelProperty(value = "内容")
 	private String message;
 
-	/** 错误码 */
+	/**
+	 * 错误码
+	 */
+	@ApiModelProperty(value = "错误码")
 	private Integer errorCode;
 
-	/** 返回数据 */
+	/**
+	 * 返回数据
+	 */
+	@ApiModelProperty(value = "返回数据")
 	private Object data;
 
 	/**

@@ -23,6 +23,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<maven.compiler.plugin.version>3.6.1</maven.compiler.plugin.version>
+		<spring-boot-starter-swagger.version>1.0.1</spring-boot-starter-swagger.version>
 	</properties>
 
 	<dependencies>
@@ -123,6 +124,12 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
+		</dependency>
+		<!-- swagger -->
+		<dependency>
+			<groupId>com.gitee.reger</groupId>
+			<artifactId>spring-boot-starter-swagger</artifactId>
+			<version>${spring-boot-starter-swagger.version}</version>
 		</dependency>
 	</dependencies>
 	<build>
