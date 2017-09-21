@@ -6,7 +6,6 @@
 	<groupId>com.pactera</groupId>
 	<artifactId>spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
 
 	<name>spring-boot</name>
 	<description>pactera-spring-boot</description>
@@ -42,6 +41,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<!-- 实时更新 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 		<!-- MySQL JDBC驱动 -->
 		<dependency>
