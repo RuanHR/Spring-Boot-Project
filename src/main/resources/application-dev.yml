@@ -4,12 +4,16 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
-  thymeleaf.mode: HTML5
-  thymeleaf.encoding: UTF-8
-  thymeleaf.content-type: text/html
-  thymeleaf.cache: false
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    content-type: text/html
+    cache: false
   profiles:
     include: api
+  redis:
+    host: 127.0.0.1
+    port: 6379
 mybatis:
   type-aliases-package: com.pactera.business.domain
   mapper-locations: classpath:mapper/*.xml
@@ -21,4 +25,4 @@ pagehelper:
   helperDialect: mysql
   reasonable: true
   supportMethodsArguments: true
-  params: count=countSq
+  params: count=countSql
