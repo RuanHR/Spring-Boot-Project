@@ -9,7 +9,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.pactera.base.core.AbstractService;
 import com.pactera.business.domain.User;
-import com.pactera.business.mapper.UserMapper;
+import com.pactera.business.mapper.master.UserMapper;
 import com.pactera.business.service.UserService;
 
 import tk.mybatis.mapper.entity.Example;

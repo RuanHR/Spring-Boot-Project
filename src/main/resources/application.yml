@@ -1,6 +1,20 @@
 # tomcat server
 server:
   port: 80
+# datasource
+master:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring-boot?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+
+cluster:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring-boot-2?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
 # log level
 logging:
   level:

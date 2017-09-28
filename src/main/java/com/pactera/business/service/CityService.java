@@ -37,4 +37,13 @@ public interface CityService {
 	 */
 	void updateCityDescription(String cityName, String description);
 
+	/**
+	 * @author ToniR
+	 * @since 2017年9月28日 下午3:33:31
+	 * @title findByName
+	 * @description 根据名称查询城市信息
+	 * @return City
+	 */
+	City findByName(String name);
+
 }

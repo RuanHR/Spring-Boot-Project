@@ -26,4 +26,10 @@ public class City2ServiceImpl implements CityService {
 
 	}
 
+	@Override
+	public City findByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

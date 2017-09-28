@@ -2,7 +2,9 @@ package com.pactera.business.domain;
 
 import com.pactera.base.domain.BaseDomain;
 
-import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,24 +12,27 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@ApiModel("城市实体类")
 public class City extends BaseDomain {
 
-	private static final long serialVersionUID = -3875105464962061090L;
+	private static final long serialVersionUID = 5079080163963218084L;
 
 	/**
 	 * 省id
 	 */
+	@ApiModelProperty(value = "省id")
+	@Column(name = "province_id")
 	private Long provinceId;
 
 	/**
 	 * 城市名称
 	 */
+	@ApiModelProperty(value = "城市名称")
+	@Column(name = "city_name")
 	private String cityName;
 
 	/**
-	 * 描述
+	 * 城市描述
 	 */
-	private String description;
-
+	@ApiModelProperty(value = "城市描述")
+	private String decription;
 }

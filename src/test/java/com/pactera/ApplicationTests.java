@@ -32,7 +32,7 @@ public class ApplicationTests {
 		city.setId(1L);
 		city.setProvinceId(10L);
 		city.setCityName("上海");
-		city.setDescription("人称魔都的地方");
+		city.setDecription("人称魔都的地方");
 		return city;
 	}
 
@@ -41,7 +41,7 @@ public class ApplicationTests {
 		city.setId(2L);
 		city.setProvinceId(20L);
 		city.setCityName("北京");
-		city.setDescription("中国帝都");
+		city.setDecription("中国帝都");
 		return city;
 	}
 
